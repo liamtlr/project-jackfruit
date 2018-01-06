@@ -1,0 +1,2 @@
+class FoodSwap < ApplicationRecord
+end
