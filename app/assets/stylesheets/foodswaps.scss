@@ -1,3 +1,24 @@
 // Place all the styles related to the foodswaps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$primaryColor: #eeffcc;
+$charcoal: #AFA7A5;
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: $primaryColor;
+}
+
+.swap-holder {
+  width: 50%;
+  height: 35px;
+  border-width: 2px;
+  border-color: $charcoal;
+  border-radius: 3%;
+  border-style: solid;
+  margin: 25px 25px;
+
+  h2 {
+    margin: 5px 5px;
+  }
+}

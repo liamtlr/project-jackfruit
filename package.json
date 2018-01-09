@@ -1,0 +1,30 @@
+{
+  "name": "jackfruit",
+  "version": "1.0.0",
+  "description": "A platform for people to meet over food",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamtlr/project-jackfruit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamtlr/project-jackfruit/issues"
+  },
+  "homepage": "https://github.com/liamtlr/project-jackfruit#readme",
+  "devDependencies": {
+    "exports-loader": "^0.6.4",
+    "expose-loader": "^0.7.4",
+    "imports-loader": "^0.7.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+  }
+}
