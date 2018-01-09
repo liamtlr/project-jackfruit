@@ -1,0 +1,17 @@
+{
+  "name": "jackfruit",
+  "description": "A platform for people to meet over food",
+  "main": "index.js",
+  "authors": [
+    "Liam Taylor <liam.taylor888@googlemail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/liamtlr/project-jackfruit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
