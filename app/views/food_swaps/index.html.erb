@@ -1,12 +1,24 @@
-
-<% if @food_swaps.any? %>
-  <% @food_swaps.each do |food_swap| %>
-  <div class="swap-holder">
-    <h2><%=  food_swap.title %> Spots available: <%= food_swap.spots_available%></h2>
-  </div>
+<% if user_signed_in? %>
+  <% if @food_swaps.any? %>
+    <% @food_swaps.each do |food_swap| %>
+    <div class="swap-holder">
+      <h2><%=  food_swap.title %> Spots available: <%= food_swap.spots_available%></h2>
+    </div>
+    <% end %>
+  <% else %>
+    <p>No foodswaps yet</p>
   <% end %>
-<% else %>
-  <p>No foodswaps yet</p>
-<% end %>
 
-<%=  link_to "Add a foodswap", new_food_swap_url %>
+  <% if @profile %>
+    <%=  link_to "Add a foodswap", new_food_swap_url %>
+  <% else %>
+    <%= link_to "Create your profile", new_profile_path %> to add a foodswap
+  <% end %>
+
+
+
+<% else %>
+
+  Sign in to view foodswaps in your area
+
+<% end %>

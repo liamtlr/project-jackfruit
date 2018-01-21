@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   root "food_swaps#index"
 
   resources :food_swaps
+  resources :profiles
+
+  authenticate :user do
+    resources :food_swaps, only: [:new, :create, :edit, :update, :destroy]
+    resources :profiles, only: [:new, :create, :edit, :update, :destroy]
+  end
 end
